@@ -4,7 +4,7 @@ services:
     container_name: nanook-website
     restart: unless-stopped
     ports:
-      - "3008:80"
+      - "3009:80"
     healthcheck:
       test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/"]
       interval: 30s
