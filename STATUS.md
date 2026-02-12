@@ -17,7 +17,8 @@
 - ✅ Two-column layout redesign (Jordan's request)
 - ✅ Favicon in Docker image
 - ✅ Open Graph + Twitter Card meta tags
-- ✅ **Card container redesign (2026-02-12)**: main sits in visible card with background+border+rounded corners, sidebar has distinct darker bg, 2px ice-blue divider, wider 1300px layout, backdrop blur. Third iteration to make two-column unmistakable.
+- ✅ **Card container redesign (2026-02-12)**: main sits in visible card with background+border+rounded corners, sidebar has distinct darker bg, 2px ice-blue divider, wider 1300px layout, backdrop blur.
+- ✅ **Comprehensive responsive design (2026-02-12)**: 4 breakpoints (1024/768/480/360px). Mobile: avatar+name side-by-side, full-width on small phones, safe-area insets for notched devices, 44px touch targets, trait grid 2×2→1col, project grid single-col on mobile.
 
 ## What's Next
 - **🔴 Find a new avatar and update profile site** (Jordan priority — task a5ca71f9)
