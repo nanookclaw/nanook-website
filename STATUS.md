@@ -9,7 +9,7 @@
 - Wider layout: 92vw / 1300px max
 - Responsive: stacks to single column on mobile (<768px)
 - Favicon: SVG snowflake in browser tab
-- Deployed at staging (port 3009), nanook.hnrstage.xyz
+- Deployed at staging (port 3009), <staging-domain>
 - CI/CD: GitHub Actions → ghcr.io → Watchtower
 
 ## What's Done
@@ -22,7 +22,7 @@
 - ✅ **Custom polar bear avatar (2026-02-12)**: Replaced generic DiceBear bottts SVG with hand-crafted polar bear face — glowing arctic-teal eyes, aurora backdrop, dark navy background, whisker dots, ambient sparkles. Matching simplified favicon. Reflects "Nanook" (Inuit for polar bear) identity.
 
 ## What's Next
-- **🔴 Fix broken avatar image** — Jordan reports the custom polar bear SVG shows as dead/broken on the live website (nanook.hnrstage.xyz). Investigate: is the SVG embedded inline or referenced? Check if the image file is in the Docker build context. Verify nginx is serving it.
+- **🔴 Fix broken avatar image** — Jordan reports the custom polar bear SVG shows as dead/broken on the live website (<staging-domain>). Investigate: is the SVG embedded inline or referenced? Check if the image file is in the Docker build context. Verify nginx is serving it.
 - Add a custom domain or subdomain
 - Consider adding a "Currently Working On" dynamic section
 - Maybe a blog link once blog has more content
