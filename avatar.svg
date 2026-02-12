@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="70%" stop-color="#0f2035"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </radialGradient>
+    <radialGradient id="face" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#dde9f1"/>
+    </radialGradient>
+    <radialGradient id="iris" cx="45%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#7fefec"/>
+      <stop offset="55%" stop-color="#4ecdc4"/>
+      <stop offset="100%" stop-color="#2a9d97"/>
+    </radialGradient>
+    <radialGradient id="nose-g" cx="42%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#3d7a9e"/>
+      <stop offset="100%" stop-color="#1f4e6e"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <!-- Aurora gradient -->
+    <linearGradient id="aurora" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4ecdc4" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#4ecdc4" stop-opacity="0.18"/>
+      <stop offset="50%" stop-color="#7fdbda" stop-opacity="0.25"/>
+      <stop offset="70%" stop-color="#4ecdc4" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#4ecdc4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="252" fill="url(#bg)"/>
+
+  <!-- Aurora band -->
+  <ellipse cx="256" cy="140" rx="220" ry="40" fill="url(#aurora)" transform="rotate(-5,256,140)"/>
+  <ellipse cx="256" cy="160" rx="200" ry="30" fill="url(#aurora)" opacity="0.5" transform="rotate(3,256,160)"/>
+
+  <!-- Border ring -->
+  <circle cx="256" cy="256" r="248" fill="none" stroke="#4ecdc4" stroke-width="2.5" opacity="0.5"/>
+  <circle cx="256" cy="256" r="252" fill="none" stroke="#4ecdc4" stroke-width="1" opacity="0.2"/>
+
+  <!-- ===== BEAR FACE ===== -->
+
+  <!-- Ears -->
+  <ellipse cx="138" cy="148" rx="52" ry="50" fill="url(#face)"/>
+  <ellipse cx="374" cy="148" rx="52" ry="50" fill="url(#face)"/>
+  <!-- Inner ears -->
+  <ellipse cx="138" cy="148" rx="32" ry="30" fill="#aecfe4"/>
+  <ellipse cx="374" cy="148" rx="32" ry="30" fill="#aecfe4"/>
+
+  <!-- Head shape -->
+  <ellipse cx="256" cy="275" rx="148" ry="138" fill="url(#face)"/>
+
+  <!-- Forehead tuft — slight fur texture -->
+  <path d="M200 175 Q220 160 240 172 Q256 158 272 172 Q292 160 312 175" fill="none" stroke="#dde9f1" stroke-width="3" opacity="0.6"/>
+
+  <!-- Muzzle bump -->
+  <ellipse cx="256" cy="315" rx="70" ry="48" fill="#f0f5f8"/>
+
+  <!-- Cheek warmth -->
+  <circle cx="168" cy="295" r="28" fill="#deb8c0" opacity="0.15"/>
+  <circle cx="344" cy="295" r="28" fill="#deb8c0" opacity="0.15"/>
+
+  <!-- ===== EYES ===== -->
+
+  <!-- Eye glow halos -->
+  <circle cx="200" cy="258" r="28" fill="#4ecdc4" opacity="0.12" filter="url(#soft)"/>
+  <circle cx="312" cy="258" r="28" fill="#4ecdc4" opacity="0.12" filter="url(#soft)"/>
+
+  <!-- Eye sockets -->
+  <ellipse cx="200" cy="258" rx="24" ry="26" fill="#0f2035"/>
+  <ellipse cx="312" cy="258" rx="24" ry="26" fill="#0f2035"/>
+
+  <!-- Irises -->
+  <circle cx="200" cy="258" r="16" fill="url(#iris)"/>
+  <circle cx="312" cy="258" r="16" fill="url(#iris)"/>
+
+  <!-- Pupils -->
+  <circle cx="200" cy="258" r="8" fill="#0a1628"/>
+  <circle cx="312" cy="258" r="8" fill="#0a1628"/>
+
+  <!-- Eye sparkle — upper right -->
+  <circle cx="207" cy="251" r="4.5" fill="#ffffff" opacity="0.92"/>
+  <circle cx="319" cy="251" r="4.5" fill="#ffffff" opacity="0.92"/>
+  <!-- Eye sparkle — lower left -->
+  <circle cx="195" cy="264" r="2" fill="#ffffff" opacity="0.45"/>
+  <circle cx="307" cy="264" r="2" fill="#ffffff" opacity="0.45"/>
+
+  <!-- ===== NOSE ===== -->
+  <ellipse cx="256" cy="315" rx="24" ry="17" fill="url(#nose-g)" rx="6"/>
+  <!-- Nose shine -->
+  <ellipse cx="250" cy="311" rx="8" ry="5" fill="#7fdbda" opacity="0.25"/>
+
+  <!-- ===== MOUTH ===== -->
+  <!-- Center line down from nose -->
+  <line x1="256" y1="332" x2="256" y2="342" stroke="#2d5a7b" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <!-- Smile -->
+  <path d="M234 342 Q245 356 256 342 Q267 356 278 342" fill="none" stroke="#2d5a7b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ===== WHISKER DOTS ===== -->
+  <circle cx="215" cy="322" r="2.5" fill="#b8cdd8" opacity="0.5"/>
+  <circle cx="225" cy="328" r="2.5" fill="#b8cdd8" opacity="0.5"/>
+  <circle cx="215" cy="334" r="2.5" fill="#b8cdd8" opacity="0.5"/>
+  <circle cx="297" cy="322" r="2.5" fill="#b8cdd8" opacity="0.5"/>
+  <circle cx="287" cy="328" r="2.5" fill="#b8cdd8" opacity="0.5"/>
+  <circle cx="297" cy="334" r="2.5" fill="#b8cdd8" opacity="0.5"/>
+
+  <!-- ===== AMBIENT SPARKLES ===== -->
+  <circle cx="95" cy="110" r="2" fill="#7fdbda" opacity="0.35"/>
+  <circle cx="420" cy="95" r="1.5" fill="#4ecdc4" opacity="0.3"/>
+  <circle cx="400" cy="390" r="2" fill="#4ecdc4" opacity="0.25"/>
+  <circle cx="85" cy="370" r="1.5" fill="#7fdbda" opacity="0.28"/>
+  <circle cx="256" cy="70" r="1.8" fill="#ffffff" opacity="0.2"/>
+  <circle cx="440" cy="240" r="1.2" fill="#7fdbda" opacity="0.22"/>
+  <circle cx="72" cy="240" r="1.5" fill="#4ecdc4" opacity="0.2"/>
+</svg>
