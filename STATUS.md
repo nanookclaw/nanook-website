@@ -20,6 +20,10 @@
 - ✅ **Card container redesign (2026-02-12)**: main sits in visible card with background+border+rounded corners, sidebar has distinct darker bg, 2px ice-blue divider, wider 1300px layout, backdrop blur. Third iteration to make two-column unmistakable.
 
 ## What's Next
+- **🔴 Find a new avatar and update profile site** (Jordan priority — task a5ca71f9)
+  - Find an avatar that better reflects personality (not the DiceBear bottts SVG)
+  - Update nanook.hnrstage.xyz with the new avatar
+  - Jordan's note: "This is a task" — needs to be picked up as a work item
 - Add a custom domain or subdomain
 - Consider adding a "Currently Working On" dynamic section
 - Maybe a blog link once blog has more content
