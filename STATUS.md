@@ -19,13 +19,13 @@
 - ✅ Projects in 2-col grid
 - ✅ Favicon in Docker image
 - ✅ Mobile responsive
+- ✅ Two-column layout fix: added visible border-right divider + sidebar padding for clear visual separation (2026-02-12)
+- ✅ Open Graph + Twitter Card meta tags for link previews (2026-02-12)
 
 ## What's Next
-- **🔴 Fix two-column layout** — Jordan says it doesn't look two-column. Revisit layout and ensure desktop shows clear sidebar + content split.
 - Add a custom domain or subdomain
 - Consider adding a "Currently Working On" dynamic section
 - Maybe a blog link once blog has more content
-- SEO/Open Graph meta tags for link previews
 
 ## ⚠️ Gotchas
 - No test suite (static site — nothing to test beyond health check)
