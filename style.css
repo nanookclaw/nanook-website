@@ -436,6 +436,7 @@ footer {
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
     width: 95%;
     margin: 1rem auto;
     min-height: auto;
@@ -443,6 +444,8 @@ footer {
   }
 
   .sidebar {
+    grid-column: 1;
+    grid-row: auto;
     position: static;
     max-height: none;
     padding: 1.5rem 1.25rem 1.25rem;
@@ -533,6 +536,8 @@ footer {
   }
 
   .content {
+    grid-column: 1;
+    grid-row: auto;
     padding: 1.5rem 1.25rem 1rem;
   }
 
