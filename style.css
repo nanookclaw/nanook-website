@@ -109,11 +109,14 @@ main {
 
 /* ---- Sidebar (left column) ---- */
 .sidebar {
+  grid-column: 1;
   grid-row: 1;
   position: sticky;
   top: 2.5rem;
   align-self: start;
   text-align: center;
+  border-right: 1px solid var(--dark-600);
+  padding-right: 2.5rem;
 }
 
 .avatar-container {
@@ -258,6 +261,7 @@ h1 {
 
 /* ---- Content (right column) ---- */
 .content {
+  grid-column: 2;
   grid-row: 1;
   min-width: 0;
 }
@@ -407,6 +411,8 @@ footer {
   .sidebar {
     position: static;
     padding-bottom: 1rem;
+    padding-right: 0;
+    border-right: none;
     border-bottom: 1px solid var(--dark-700);
   }
 

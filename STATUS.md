@@ -21,6 +21,7 @@
 - ✅ Mobile responsive
 
 ## What's Next
+- **🔴 Fix two-column layout** — Jordan says it doesn't look two-column. Revisit layout and ensure desktop shows clear sidebar + content split.
 - Add a custom domain or subdomain
 - Consider adding a "Currently Working On" dynamic section
 - Maybe a blog link once blog has more content
