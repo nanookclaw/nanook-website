@@ -22,7 +22,7 @@
 - ✅ **Custom polar bear avatar (2026-02-12)**: Replaced generic DiceBear bottts SVG with hand-crafted polar bear face — glowing arctic-teal eyes, aurora backdrop, dark navy background, whisker dots, ambient sparkles. Matching simplified favicon. Reflects "Nanook" (Inuit for polar bear) identity.
 
 ## What's Next
-- **🔴 Fix broken avatar image** — Jordan reports the custom polar bear SVG shows as dead/broken on the live website (<staging-domain>). Investigate: is the SVG embedded inline or referenced? Check if the image file is in the Docker build context. Verify nginx is serving it.
+- **🔴 Layout redesign (Jordan direction 2026-02-13):** Adopt wider page for desktop. Left side: avatar + titles/tags. Right side: very condensed content layout. Goal: most content fits above the fold without scrolling. Jordan has said the two-column layout "doesn't look two-column" across 3 reviews — this needs a visible, obvious two-column split.
 - Add a custom domain or subdomain
 - Consider adding a "Currently Working On" dynamic section
 - Maybe a blog link once blog has more content
