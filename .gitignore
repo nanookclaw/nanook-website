@@ -1,4 +1,17 @@
-.DS_Store
+# Node
+node_modules/
+dist/
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
 *.swp
 *.swo
 *~
+
+# OS
+.DS_Store
+Thumbs.db
