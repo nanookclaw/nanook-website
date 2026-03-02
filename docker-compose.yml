@@ -1,6 +1,6 @@
 services:
   nanook-website:
-    image: ghcr.io/humans-not-required/nanook-website:dev
+    image: ghcr.io/nanookclaw/nanook-website:dev
     container_name: nanook-website
     restart: unless-stopped
     ports:
